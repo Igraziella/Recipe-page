@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
+/* Global */
 * {
     margin: 0;
     padding: 0;
@@ -12,38 +13,44 @@ body {
     justify-content: center;
 }
 
+/* Main container */
 .main-card {
     background-color:hsl(0, 0%, 100%);
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    max-width: 600px;
     padding: 2rem;
-    margin: 20px;
+    margin: 2rem;
     border-radius: 10px;
     font-family: 'Outfit';
+    line-height: 1.5em;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    /* margin-bottom: 10px; */
 }
 
 .card {
     margin-bottom: 5px;
 }
 
-.sect1 {
+.prep-card {
     margin: 3px;
     padding: 20px;
     box-sizing: content-box;
     background-color: hsl(330, 100%, 98%);
-    line-height: 1.5em;
-    border-radius: 5px;
-}
-
-.sect2 {
-    margin: 20px;
-}
-
-img {
-    max-width: 400px;
     border-radius: 10px;
-    margin-bottom: 10px;
+}
+
+.ingredient, .instruction {
+    padding: 1rem;
+    border-bottom: 1px solid;
+}
+
+.nutrition {
+    padding-top: 20px;
 }
 
 h1 {
@@ -52,18 +59,32 @@ h1 {
     margin-bottom: 10px;
     font-family: 'Young Serif';
     font-weight: 400;
-
+    margin-top: 1.5rem;
 }
 
 h2 {
     color: hsl(14, 45%, 36%);
+    margin-bottom: 1rem;
 }
 
 h4 {
     color: hsl(332, 51%, 32%);
+    padding-left: 0;
 }
 
 p, ul, ol {
     font-size: 16px;
     color: hsl(30, 10%, 34%);
+}
+
+.nutrition li {
+    list-style: none;
+    border-bottom: 1px solid;
+    line-height: 3rem;
+    display: flex;
+    gap: 30px;
+}
+
+span {
+    color: hsl(14, 45%, 36%);
 }
