@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-/* Global */
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +21,7 @@ body {
     padding: 2rem;
     margin: 2rem;
     border-radius: 10px;
-    font-family: 'Outfit';
+    font-family: 'Young serif', Outfit;
     line-height: 1.5em;
 }
 
@@ -32,11 +31,12 @@ img {
     /* margin-bottom: 10px; */
 }
 
-.card {
+/* sections */
+section.card {
     margin-bottom: 5px;
 }
 
-.prep-card {
+section.prep-card {
     margin: 3px;
     padding: 20px;
     box-sizing: content-box;
@@ -44,21 +44,21 @@ img {
     border-radius: 10px;
 }
 
-.ingredient, .instruction {
+section.ingredient, .instruction {
     padding: 1rem;
     border-bottom: 1px solid;
 }
 
-.nutrition {
+section.nutrition {
     padding-top: 20px;
 }
 
+/* Header tags */
 h1 {
     color: hsl(24, 5%, 18%);
-    font-family: young serif, outfit;
+    font-family: 'Young Serif', outfit;
     margin-bottom: 10px;
-    font-family: 'Young Serif';
-    font-weight: 400;
+    font-weight: 700;
     margin-top: 1.5rem;
 }
 
@@ -69,7 +69,7 @@ h2 {
 
 h4 {
     color: hsl(332, 51%, 32%);
-    padding-left: 0;
+    /* padding-left: 0; */
 }
 
 p, ul, ol {
@@ -81,10 +81,12 @@ p, ul, ol {
     list-style: none;
     border-bottom: 1px solid;
     line-height: 3rem;
+    /* margin-left: 2rem; */
     display: flex;
-    gap: 30px;
+    justify-content: space-around;    
 }
 
 span {
     color: hsl(14, 45%, 36%);
+    font-weight: 700;
 }
