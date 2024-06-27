@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.google.com/specimen/Young+Serif');
+@import url('https://fonts.google.com/specimen/Outfit');
 
 * {
     margin: 0;
@@ -28,7 +28,6 @@ body {
 img {
     max-width: 100%;
     border-radius: 10px;
-    /* margin-bottom: 10px; */
 }
 
 /* sections */
@@ -69,7 +68,7 @@ h2 {
 
 h4 {
     color: hsl(332, 51%, 32%);
-    /* padding-left: 0; */
+
 }
 
 p, ul, ol {
@@ -81,7 +80,6 @@ p, ul, ol {
     list-style: none;
     border-bottom: 1px solid;
     line-height: 3rem;
-    /* margin-left: 2rem; */
     display: flex;
     justify-content: space-around;    
 }
@@ -89,4 +87,23 @@ p, ul, ol {
 span {
     color: hsl(14, 45%, 36%);
     font-weight: 700;
+}
+
+@media (max-width: 320px) {
+    .main-card {
+        background-color:hsl(0, 0%, 100%);
+        display: flex;
+        flex-direction: column;
+        /* max-width: 600px; */
+        /* padding: 2rem;
+        margin: 2rem; */
+        /* border-radius: 10px; */
+        font-family: 'Young serif', Outfit;
+        line-height: 1.5em;
+    }
+    
+    img {
+        max-width: 100%;
+        /* border-radius: 10px; */
+    }
 }
